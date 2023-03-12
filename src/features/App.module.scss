@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap";
+@import "./variables";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  color: $text;
+  margin: 0;
+}
+
+.container {
+  width: 53.9rem;
+  padding: 3.8rem 1rem;
+  margin: 0 auto;
+}
+
+.Toggle {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.Constructor {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,18 @@
+@import "../../variables";
+
+.container {
+  max-width: 24rem;
+}
+
+.wrapper {
+  padding: 0.4rem;
+  user-select: none;
+  cursor: move;
+  background-color: white;
+  border-radius: 0.4rem;
+  box-shadow: $boxShadow;
+
+  &:not(:last-child) {
+    margin-bottom: 1.2rem;
+  }
+}

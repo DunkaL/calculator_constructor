@@ -1,0 +1,33 @@
+@import "../../variables";
+
+.container {
+  display: inline-block;
+  padding: 0.1rem;
+  background-color: $bg;
+  border-radius: 0.6rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.734rem 1.446rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: $grey;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.active {
+  cursor: default;
+  background-color: white;
+  border-color: $border;
+
+  svg path {
+    stroke: $accent;
+  }
+}

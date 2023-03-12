@@ -19,14 +19,7 @@
     "es6": true,
     "node": true
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "import",
-    "jsx-a11y",
-    "react-hooks",
-    "prettier"
-  ],
+  "plugins": ["react", "@typescript-eslint", "import", "jsx-a11y", "react-hooks", "prettier"],
   "extends": [
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended",
@@ -40,14 +33,16 @@
     "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/jsx-props-no-spreading": "off",
     "import/prefer-default-export": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      { "argsIgnorePattern": "^_" }
-    ]
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }]
   }
 }
